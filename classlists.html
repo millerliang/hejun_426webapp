@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Page Title</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="assets/css/flexboxgrid.min.css"/>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css"/>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<nav class="navbar row middle-xs">
+			<selected class="col-xs-2 col-sm-1 text-center">
+				<a href="index.html"><i class="fa fa-angle-left fa-2x grey"></i></a>
+			</selected>
+			<header class="col-xs-10 col-sm-11 topSearch">
+				<i class="fa fa-search"></i><input placeholder="搜索" type="text">
+			</header>
+		</nav>
+	</div>
+
+	<div class="container thisStickyTop" style="background-color:rgba(255,255,255,.92);z-index:1;">
+		<article class="filterSel row middle-xs text-center">
+			<label class="col-xs-4 trs3" for="sel-1">经营管理 <i class="fa fa-angle-down trs3 grey"></i></label>
+			<label class="col-xs-4 trs3" for="sel-2">排序 <i class="fa fa-angle-down trs3 grey"></i></label>
+			<label class="col-xs-4 trs3" for="sel-3">筛选 <i class="fa fa-angle-down trs3 grey"></i></label>
+		</article>
+		<input id="sel-1" type="checkbox">
+		<label for="sel-1" class="filterCont trs3"></label>
+		<selected class="contBody">
+			<ul class="skillList">
+				<li><input id="all" type="radio" name="rcc" checked><label for="all">全部课程 <i class="fa fa-check"></i></label></li>
+				<li><input id="a" type="radio" name="rcc"><label for="a">职业技能 <i class="fa fa-check"></i></label></li>
+				<li><input id="b" type="radio" name="rcc"><label for="b">求职求学 <i class="fa fa-check"></i></label></li>
+				<li><input id="c" type="radio" name="rcc"><label for="c">经营管理 <i class="fa fa-check"></i></label></li>
+				<li><input id="d" type="radio" name="rcc"><label for="d">职业技能 <i class="fa fa-check"></i></label></li>
+			</ul>
+		</selected>
+		<input id="sel-2" type="checkbox">
+		<label for="sel-2" class="filterCont trs3"></label>
+		<selected class="contBody">排序</selected>
+		<input id="sel-3" type="checkbox">
+		<label for="sel-3" class="filterCont trs3"></label>
+		<selected class="contBody">
+			<h3 class="grey">课程类型</h3>
+			<div class="h1rem"></div>
+			<ul class="coursePrice row center-xs">
+				<li class="col-xs-4"><input id="single" type="radio" name="class" checked><label for="single">单课</label></li>
+				<li class="col-xs-4"><input id="package" type="radio" name="class"><label for="package">套餐</label></li>
+				<!-- <li class="col-xs-4"><button class="btn btn-block">套餐</button></li> -->
+				<li class="col-xs-4">&nbsp;</li>
+			</ul>
+			<div class="h1rem"></div>
+			<h3 class="grey">价格区间</h3>
+			<div class="h1rem"></div>
+			<ul class="coursePrice row center-xs">
+				<li class="col-xs-4"><input id="free" type="radio" name="cost" checked><label for="free">免费</label></li>
+				<li class="col-xs-4"><input id="1yuan" type="radio" name="cost"><label for="1yuan">1元试听</label></li>
+				<li class="col-xs-4"><input id="50yuan" type="radio" name="cost"><label for="50yuan">￥50元以下</label></li>
+				<li class="col-xs-4"><input id="5-1yuan" type="radio" name="cost"><label for="5-1yuan">￥50-100</label></li>
+				<li class="col-xs-4"><input id="1-2yuan" type="radio" name="cost"><label for="1-2yuan">￥100-200</label></li>
+				<li class="col-xs-4"><input id="2yuan" type="radio" name="cost"><label for="2yuan">￥200以上</label></li>
+			</ul>
+			<div class="h1rem"></div>
+			<ul class="row center-xs" style="width:80%;margin:0 auto;">
+				<li class="col-xs"><button class="btn btn-block grey">最低价</button></li>
+				<li class="col-xs"><button class="btn btn-block grey">-</button></li>
+				<li class="col-xs"><button class="btn btn-block grey">最高价</button></li>
+			</ul>
+			<div class="h1rem"></div>
+		</selected>
+	</div>
+
+	<main class="container mainHeight">
+		
+		<div class="h1rem"></div>
+		<ul class="eBuy">
+			<li>
+				<a href="#0" class="row">
+					<selected class="col-xs-3 col-sm-2">
+						<img class="img-responsive" src="https://placem.at/things?txt=eGo&w=180&amp;h=180&amp;random=1">
+					</selected>
+					<selected class="col-xs-7 col-sm-8">
+						<h2>产品定价法</h2>
+						<p class="grey">讲师: 钟敏</p>
+						<small class="grey"><i class="fa fa-user-o"></i> 896人学过</small>
+					</selected>
+					<selected class="col-xs-2 col-sm-2 text-right"><span class="red f14">￥299</span></selected>
+				</a>
+			</li>
+			<li>
+				<a href="#0" class="row">
+					<selected class="col-xs-3 col-sm-2">
+						<img class="img-responsive" src="https://placem.at/things?txt=eGo&w=180&amp;h=180&amp;random=2">
+					</selected>
+					<selected class="col-xs-7 col-sm-8">
+						<h2>如何制作一结合格的试讲课程呢？</h2>
+						<p class="grey">讲师: 王明福</p>
+						<small class="grey"><i class="fa fa-user-o"></i> 8877人学过</small>
+					</selected>
+					<selected class="col-xs-2 col-sm-2 text-right">
+						<span class="red f14">￥199</span>
+						<strike class="grey">399</strike>
+						<span class="limitedTime">限时优惠</span>
+					</selected>
+				</a>
+			</li>
+			<li>
+				<a href="#0" class="row">
+					<selected class="col-xs-3 col-sm-2">
+						<img class="img-responsive" src="https://placem.at/things?txt=eGo&w=180&amp;h=180&amp;random=3">
+					</selected>
+					<selected class="col-xs-7 col-sm-8">
+						<h2>如何打造极致自我介绍</h2>
+						<p class="grey">讲师: 谢芸</p>
+						<small class="grey"><i class="fa fa-user-o"></i> 342人学过</small>
+					</selected>
+					<selected class="col-xs-2 col-sm-2 text-right"><span class="red">免费</span></selected>
+				</a>
+			</li>
+			<li>
+				<a href="#0" class="row">
+					<selected class="col-xs-3 col-sm-2">
+						<img class="img-responsive" src="https://placem.at/things?txt=eGo&w=180&amp;h=180&amp;random=4">
+					</selected>
+					<selected class="col-xs-7 col-sm-8">
+						<h2>买房与租房</h2>
+						<p class="grey">讲师: 牛一林</p>
+						<small class="grey"><i class="fa fa-user-o"></i> 896人学过</small>
+					</selected>
+					<selected class="col-xs-2 col-sm-2 text-right"><span class="red f14">￥59</span></selected>
+				</a>
+			</li>
+			<li>
+				<a href="#0" class="row">
+					<selected class="col-xs-3 col-sm-2">
+						<img class="img-responsive" src="https://placem.at/things?txt=eGo&w=180&amp;h=180&amp;random=5">
+					</selected>
+					<selected class="col-xs-7 col-sm-8">
+						<h2>申请美国本科生</h2>
+						<p class="grey">讲师: 周星</p>
+						<small class="grey"><i class="fa fa-user-o"></i> 992人学过</small>
+					</selected>
+					<selected class="col-xs-2 col-sm-2 text-right"><span class="red f14">￥59</span></selected>
+				</a>
+			</li>
+		</ul>
+
+		<div class="h1rem"></div>
+		<div class="noMore"><small>没有更多了</small></div>
+
+	</main>
+
+	<!-- <div class="container-fluid thisStickyBottom">
+		<footer class="footerMenu row center-xs">
+			<selected class="col-xs"><a href="index.html"><i class="fa fa-circle-o fa-2x"></i><label>首页</label></a></selected>
+			<selected class="col-xs"><a href="subpage.html" class="active"><i class="fa fa-circle-o fa-2x"></i><label>已购</label></a></selected>
+			<selected class="col-xs"><a href="mypage.html"><i class="fa fa-circle-o fa-2x"></i><label>我的</label></a></selected>
+		</footer>
+	</div> -->
+
+	<!-- JavaScript ================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+	$(".thisStickyTop").children('input[type="checkbox"]').on('change', function() {
+		$(".thisStickyTop").children('input[type="checkbox"]').not(this).prop('checked', false);
+	});
+	</script>
+</body>
+</html>
