@@ -38,7 +38,7 @@ h1,h2,strong,b{font-weight: bold;}
 .text-left {text-align:left;}
 .text-center {text-align:center;}
 .text-right {text-align:right;}
-.thisStickyTop {position:sticky;top:0;}
+.thisStickyTop {position:sticky;top:0;z-index:8;}
 .thisStickyBottom {position:sticky;bottom:-1px;}
 
 .btn{display: inline-block;padding: .2rem .6rem;background-color:transparent;line-height: 1.42857143;text-align: center;white-space: nowrap;vertical-align: middle;-ms-touch-action: manipulation;touch-action: manipulation;cursor: pointer;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;background-image: none;border: 1px solid transparent;border-radius: 4px;}
@@ -99,7 +99,7 @@ h1,h2,strong,b{font-weight: bold;}
 .seniorLecturer li a img {display:block;width:5rem;margin:0 auto;}
 .seniorLecturer li a name {display:block;margin:1rem 0;font-weight: bold;font-size:14pt;}
 .seniorLecturer li a span {background-color:#ff8c47;color:#fff;padding:.35rem .8rem;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;}
-.seniorLecturer li a p {padding-top:3rem;color:#999;}
+.seniorLecturer li a p {padding-top:3rem;color:#999;display:block;}
 
 /* 没有更多了 */
 .noMore {display:block;width:65%;margin:0 auto;text-align:center;padding-bottom:2rem;color:#e4e4e4;}
