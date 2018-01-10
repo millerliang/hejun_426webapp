@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>历史记录</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="首页_效果图" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-339.000000, -32.000000)">
+        <g id="导航栏" transform="translate(0.000000, 20.000000)" fill="#424242">
+            <g id="历史记录" transform="translate(339.000000, 12.000000)">
+                <path d="M9.99,0 C4.47,0 0,4.48 0,10 C0,15.52 4.47,20 9.99,20 C15.52,20 20,15.52 20,10 C20,4.48 15.52,0 9.99,0 L9.99,0 Z M10,18 C5.58,18 2,14.42 2,10 C2,5.58 5.58,2 10,2 C14.42,2 18,5.58 18,10 C18,14.42 14.42,18 10,18 L10,18 Z" id="Shape"></path>
+                <path d="M9.75,4 L9.75,4 C9.33578644,4 9,4.33578644 9,4.75 L9,10 L13.6323372,12.7794023 C13.9741743,12.9845046 14.4174614,12.8753634 14.625,12.535 L14.625,12.535 C14.8296242,12.1994163 14.7234606,11.7614913 14.3878769,11.5568671 C14.3854344,11.5553778 14.3829829,11.5539032 14.3805227,11.5524434 L10.5,9.25 L10.5,4.75 C10.5,4.33578644 10.1642136,4 9.75,4 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

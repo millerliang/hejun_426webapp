@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="39px" viewBox="0 0 22 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>首页</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="首页_效果图" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-52.000000, -1456.000000)">
+        <g id="菜单栏" transform="translate(0.000000, 1449.000000)">
+            <g id="首页" transform="translate(52.000000, 7.000000)">
+                <g>
+                    <path d="M8,23 L2.47781818,23 C1.70430863,23 1,22.4781099 1,21.6295 L1,9 L1.02352234,9 C0.946889496,8.65293458 1.05815655,8.27593098 1.34586223,8.02711386 L10.3458622,0.243624582 C10.7253739,-0.0845892999 11.2893509,-0.0807541326 11.6643638,0.252590681 L20.6643638,8.25259068 C20.8878926,8.45128289 21.0012797,8.72772903 21,9.00500208 L21,21.61468 C21,22.4382059 20.3317496,23 19.562,23 L14,23 L13,23 L13,17 L9,17 L9,23 L8,23 Z M7,21 L7,16 C7,15.4477153 7.44771525,15 8,15 L14,15 C14.5522847,15 15,15.4477153 15,16 L15,21 L19,21 L19,9.44906606 L10.9909563,2.32991609 L3,9.24075193 L3,21 L7,21 Z" id="Combined-Shape" fill="#43484D" fill-rule="nonzero"></path>
+                    <text font-family="PingFangSC-Regular, PingFang SC" font-size="11" font-weight="normal" fill="#424242">
+                        <tspan x="0" y="37">首页</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

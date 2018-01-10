@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="38px" viewBox="0 0 21 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>已购</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="首页_效果图" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-177.000000, -1457.000000)">
+        <g id="菜单栏" transform="translate(0.000000, 1449.000000)">
+            <g id="已购" transform="translate(176.500000, 8.000000)">
+                <text font-family="PingFangSC-Regular, PingFang SC" font-size="11" font-weight="normal" fill="#424242">
+                    <tspan x="0" y="36">已购</tspan>
+                </text>
+                <g transform="translate(1.500000, 0.000000)" id="Combined-Shape">
+                    <path d="M18.7501084,17.3351109 C18.9111461,17.152451 19,16.9173073 19,16.673796 L19,1.83333333 C19,1.39345802 18.5707731,1 18,1 L2,1 C1.42922694,1 1,1.39345802 1,1.83333333 L1,20.1666667 C1,20.606542 1.42922694,21 2,21 L15.067533,21 C15.3545907,21 15.6278058,20.8766393 15.8176414,20.6613149 L18.7501084,17.3351109 Z" stroke="#43484D" stroke-width="2"></path>
+                    <path d="M15.4562659,21.2716562 C15.171216,20.9260153 15,20.4830025 15,20 L15,17 C15,15.8954305 14.8954305,16 16,16 L19,16 C19.4830025,16 18.9260153,16.171216 19.2716562,16.4562659 L15.4562659,21.2716562 Z" fill="#43484D"></path>
+                    <path d="M7,10 L14,10 C14.5522847,10 15,10.4477153 15,11 C15,11.5522847 14.5522847,12 14,12 L6,12 C5.72385763,12 5.47385763,11.8880712 5.29289322,11.7071068 C5.11192881,11.5261424 5,11.2761424 5,11 L5,7 C5,6.44771525 5.44771525,6 6,6 C6.55228475,6 7,6.44771525 7,7 L7,10 Z" fill="#43484D" transform="translate(10.000000, 9.000000) rotate(-45.000000) translate(-10.000000, -9.000000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

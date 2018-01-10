@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="13px" viewBox="0 0 14 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="课程详情_效果图" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-297.000000, -280.000000)">
+        <g id="内容" transform="translate(-130.000000, 64.000000)" fill="#CCCCCC">
+            <g id="标题" transform="translate(130.000000, 160.000000)">
+                <path d="M307.15,56 C305.932,56 304.763,56.567 304,57.463 C303.237,56.567 302.068,56 300.85,56 C298.694,56 297,57.694 297,59.85 C297,62.496 299.38,64.652 302.985,67.928 L304,68.845 L305.015,67.921 C308.62,64.652 311,62.496 311,59.85 C311,57.694 309.306,56 307.15,56 L307.15,56 Z M304.07,66.885 L304,66.955 L303.93,66.885 C300.598,63.868 298.4,61.873 298.4,59.85 C298.4,58.45 299.45,57.4 300.85,57.4 C301.928,57.4 302.978,58.093 303.349,59.052 L304.658,59.052 C305.022,58.093 306.072,57.4 307.15,57.4 C308.55,57.4 309.6,58.45 309.6,59.85 C309.6,61.873 307.402,63.868 304.07,66.885 L304.07,66.885 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

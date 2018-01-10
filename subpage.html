@@ -12,9 +12,8 @@
 		.contBody {padding:1rem 0 0;border-top:none;}
 		.coursePrice label {padding:.7rem 0;font-size:11pt;border: 1px solid #e3e3e3;}
 		.coursePrice li {padding-bottom:2rem;}
-		.submitBtn .col-xs-6 {padding:0;}
-		.submitBtn input {color:#999;display:block;padding:1rem 0;width:100%;-webkit-border-radius:0px;-moz-border-radius:0px;border-radius:0px;}
-		.submitBtn input[type="submit"]{color:#fff;background-color:#f92f34;}
+		.coursePrice strong {white-space:nowrap;}
+		.flexColumn p {margin-top:.8rem!important;}
 	</style>
 </head>
 
@@ -23,7 +22,7 @@
 		<nav class="navbar row middle-xs">
 			<selected class="col-xs-2"></selected>
 			<header class="col-xs-8 text-center">
-				<h1>已购</h1>
+				<h2>已购</h2>
 			</header>
 			<selected class="col-xs-2 text-center">
 				<label for="sel-pop">筛选</label>
@@ -61,19 +60,93 @@
 
 	<main class="container mainHeight">
 		
+		<div class="h05rem"></div>
+		<article class="tagBar">
+			<span class="tags">学习中 &times;</span>
+			<span class="tags">还剩7天 &times;</span>
+		</article>
+
 		<div class="h1rem"></div>
 		<ul class="eBuy">
 			<li>
 				<a href="#0" class="row">
 					<selected class="col-xs-3 col-sm-2">
-						<img class="img-responsive" src="https://placem.at/things?txt=imgs&w=180&amp;h=180&amp;random=hello">
+						<img class="img-responsive" src="https://placem.at/things?txt=imgs&w=180&amp;h=180&amp;random=5">
 					</selected>
-					<selected class="col-xs-7 col-sm-8">
-						<h2>产品定价法</h2>
-						<p class="grey">讲师: 钟敏</p>
-						<small class="grey"><i class="fa fa-user-o"></i> 896人学过</small>
+					<selected class="col-xs-9 col-sm-10">
+						<article class="flexColumn">
+							<div>
+								<h2>投资成长计画<small class="itemType">团</small></h2>
+							</div>
+							<p class="grey">有效期还剩 32 天</p>
+							<div class="alignBottom">
+								<article class="progressBlock row middle-xs">
+									<selected class="col-xs-8">
+										<article class="progress">
+											<selected style="width:10%;" class="progress-bar"></selected>
+										</article>
+									</selected>
+									<selected class="col-xs-4">
+										<small class="grey">已完成<span>10%</span></small>
+									</selected>
+								</article>
+							</div>
+						</article>
 					</selected>
-					<selected class="col-xs-2 col-sm-2 text-right"><span class="red f14">￥299</span></selected>
+				</a>
+			</li>
+			<li>
+				<a href="#0" class="row">
+					<selected class="col-xs-3 col-sm-2">
+						<img class="img-responsive" src="https://placem.at/things?txt=imgs&w=180&amp;h=180&amp;random=6">
+					</selected>
+					<selected class="col-xs-9 col-sm-10">
+						<article class="flexColumn">
+							<div>
+								<h2>产品定价法</h2>
+							</div>
+							<p class="grey">有效期还剩 26 天</p>
+							<div class="alignBottom">
+								<article class="progressBlock row middle-xs">
+									<selected class="col-xs-8">
+										<article class="progress">
+											<selected style="width:56%;" class="progress-bar"></selected>
+										</article>
+									</selected>
+									<selected class="col-xs-4">
+										<small class="grey">已完成<span>56%</span></small>
+									</selected>
+								</article>
+							</div>
+						</article>
+					</selected>
+				</a>
+			</li>
+			<li>
+				<a href="#0" class="row">
+					<selected class="col-xs-3 col-sm-2">
+						<img class="img-responsive" src="https://placem.at/things?txt=imgs&w=180&amp;h=180&amp;random=7">
+					</selected>
+					<selected class="col-xs-9 col-sm-10">
+						<article class="flexColumn">
+							<div>
+								<h2>企业能力如何驱动</h2>
+							</div>
+							<p class="grey">有效期还剩 7 天</p>
+							<div class="alignBottom">
+								<article class="progressBlock row middle-xs">
+									<selected class="col-xs-8">
+										<article class="progress">
+											<selected style="width:0%;" class="progress-bar"></selected>
+										</article>
+									</selected>
+									<selected class="col-xs-4">
+										<small class="grey">未开始<span></span></small>
+									</selected>
+								</article>
+							</div>
+						</article>
+					</selected>
 				</a>
 			</li>
 		</ul>
@@ -85,9 +158,9 @@
 
 	<div class="container-fluid thisStickyBottom">
 		<footer class="footerMenu row center-xs">
-			<selected class="col-xs"><a href="index.html"><i class="fa fa-circle-o fa-2x"></i><label>首页</label></a></selected>
-			<selected class="col-xs"><a href="subpage.html" class="active"><i class="fa fa-circle-o fa-2x"></i><label>已购</label></a></selected>
-			<selected class="col-xs"><a href="mypage.html"><i class="fa fa-circle-o fa-2x"></i><label>我的</label></a></selected>
+			<selected class="col-xs"><a href="index.html"><img src="assets/images/首页默认.svg" alt="首页"></a></selected>
+			<selected class="col-xs"><a href="subpage.html"><img src="assets/images/已购选中.svg" alt="已购"></a></selected>
+			<selected class="col-xs"><a href="mypage.html"><img src="assets/images/我的默认.svg" alt="我的"></a></selected>
 		</footer>
 	</div>
 

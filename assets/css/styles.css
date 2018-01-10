@@ -2,19 +2,24 @@
 
 /*//// for global pages Star ////*/
 
-*{box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
-body{color:#333;padding: 0;margin: 0;background-color:#efefef;font-family: Noto Sans TC,Microsoft JhengHei,Microsoft YaHei,Helvetica Neue,arial;}
+*{-webkit-font-smoothing: antialiased;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{color:#444;padding: 0;margin: 0;background-color:#efefef;font-family: Noto Sans TC,Microsoft JhengHei,Microsoft YaHei,Helvetica Neue,arial;}
 a,input:focus,button {outline:none;}
 a {color:#444;}
 a:link,a:visited,a:hover,a:active {text-decoration: underline;text-decoration: none;}
+img{vertical-align: middle;}
 h1{font-size:18pt;}
 h2,.f16{font-size:16pt;}
 h3,.f14{font-size:14pt;}
+.f10{font-size:10pt;}
 h1,h2,strong,b{font-weight: bold;}
+.bold{font-weight: bold;}
+.middle{vertical-align: middle;}
 .red {color:#e8340c;}
 .grey {color:#bbb;}
 .blue {color:#0080ff;}
-.green {color:#00ff7f;}
+.green {color:#36ea9f;}
+.yellow {color:#ff8c47;}
 
 .h05rem{height:.5rem;}
 .h1rem{height:1rem;}
@@ -26,12 +31,16 @@ h1,h2,strong,b{font-weight: bold;}
 .h4rem{height:4rem;}
 .h45rem{height:4.5rem;}
 .h5rem{height:5rem;}
+.p0{padding:0;}
+.px0{padding-left:0;padding-right:0;}
+.m0{margin:0;}
+.mx0{margin-left:0;margin-right:0;}
 
 .container-fluid,.container {background-color:#fff;padding:0;max-width:40rem;}
 .container {padding:0 .8rem;}
 .navbar{padding: .5rem 0;min-height:3.5rem;border-bottom:1px solid #ddd;}
 .row {margin:0;}
-.mainHeight{min-height:100vh;z-index:-1;}
+.mainHeight{min-height:100vh;;}
 .mainHeight__{min-height:calc(100vh-10rem)}
 .img-responsive{max-width:100%;}
 .img-circle{-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;}
@@ -45,10 +54,10 @@ h1,h2,strong,b{font-weight: bold;}
 .btn-block{display:block;width: 100%;}
 .trs3 {transition:all .3s;-moz-transition:all .3s;-webkit-transition:all .3s;}
 
-.topSearch i {position:absolute;color:#dadada;margin:.25rem 0 0 .25rem;}
+.topSearch .ico {position:absolute;color:#dadada;margin:.5rem 0 0 .25rem;}
 .topSearch input {border:none;display:block;width:100%;padding:.25rem 0 .25rem 1.5rem;}
 
-.footerMenu {padding:.2rem 0;-moz-box-shadow: 0px -2px 8px rgba(0,0,0,.12);-webkit-box-shadow: 0px -2px 8px rgba(0,0,0,.12);box-shadow: 0px -2px 8px rgba(0,0,0,.12);}
+.footerMenu {padding:.3rem 0 0;-moz-box-shadow: 0px -2px 8px rgba(0,0,0,.12);-webkit-box-shadow: 0px -2px 8px rgba(0,0,0,.12);box-shadow: 0px -2px 8px rgba(0,0,0,.12);}
 .footerMenu i {color:#666;}
 .footerMenu label {display:block;font-size:9pt;color:#999;}
 .footerMenu .active * {color:#e8340c;}
@@ -79,6 +88,7 @@ h1,h2,strong,b{font-weight: bold;}
 .hotItems a img {margin-bottom:.5rem;}
 .hotItems a h3 {color:#4a4a4a;}
 .hotItems a p {margin-top:.5rem;font-size:small;}
+.hotItems a p img {vertical-align: -webkit-baseline-middle;vertical-align: middle;}
 
 /* 换一批 */
 .loadNewItem {display:block;text-align:center;}
@@ -88,8 +98,9 @@ h1,h2,strong,b{font-weight: bold;}
 .salonItems {display:table;white-space: nowrap;display: block;width:100%;overflow: hidden;overflow-x: auto;}
 .salonItems li {display:table-cell;padding:0 .35rem .25rem 0;}
 .salonItems li:last-child {padding-right:0;}
-.salonItems li a {display:inline-block;height:6.8rem;-webkit-border-radius:8px;-moz-border-radius:8px;border-radius:8px;overflow:hidden;}
+.salonItems li a {position:relative;display:inline-block;height:6.8rem;-webkit-border-radius:8px;-moz-border-radius:8px;border-radius:8px;overflow:hidden;}
 .salonItems li a img {max-height:100%;}
+.salonItems li p {padding:.25rem;}
 
 /* 高级讲师 */
 .seniorLecturer {display:table;white-space: nowrap;display: block;width:100%;overflow: hidden;overflow-x: auto;}
@@ -113,12 +124,16 @@ h1,h2,strong,b{font-weight: bold;}
 .eBuy {}
 .eBuy li {}
 .eBuy li a {padding:1rem 0;}
-.eBuy li a selected {position:relative;}
+.eBuy li a selected {}
 .eBuy li a selected h2 {font-size:14pt;color:#555;}
 .eBuy li a p {margin-top:.25rem;}
-.eBuy li a strike {display:inline-block;margin-top:.25rem;}
-.eBuy li a .limitedTime {position:absolute;right:0;bottom:0rem;padding:.2rem .35rem;background-color:#ff8c47;color:#fff;white-space:nowrap;font-size:small;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
-.eBuy li a small {position:absolute;bottom:0rem;}
+.eBuy li a strike {display:block;margin-top:.25rem;font-size:small;}
+.eBuy li a .limitedTime {padding:.32rem .4rem;background-color:#ff8c47;color:#fff;white-space:nowrap;font-size:small;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
+
+.flexColumn {display: flex;height: 100%;flex-direction:column;}
+.flexColumn div {display: flex;}
+.flexColumn .alignBottom{align-items:flex-end;flex: 1;}
+.flexEnd {align-items: flex-end;}
 
 /* 筛选选单 */
 .filterSel {}
@@ -127,10 +142,10 @@ h1,h2,strong,b{font-weight: bold;}
 .filterSel label.active i {transform:rotate(-180deg);}
 
 .filterSel ~ input[type="checkbox"] {display:none;}
-.filterSel ~ input[type="checkbox"]:checked + label {min-height:100vh;background-color:rgba(0,0,0,.75);}
+.filterSel ~ input[type="checkbox"]:checked + label {min-height:100vh;background-color:rgba(0,0,0,.5);}
 
 .filterCont {min-height: 0px;overflow:hidden;position:absolute;left:0;width:100%;}
-.contBody {display:none;position:absolute;left:0;padding:1rem;width:100%;background-color:#fff;border-top:1px solid #ddd;}
+.contBody {display:none;position:absolute;z-index:1;left:0;padding:1rem;width:100%;background-color:#fff;border-top:1px solid #ddd;}
 
 .filterSel ~ input[type="checkbox"]:checked + .filterCont + .contBody {display:block;}
 
@@ -151,7 +166,88 @@ h1,h2,strong,b{font-weight: bold;}
 .coursePrice input[type="radio"] {display:none;}
 .coursePrice input[type="radio"]:checked + label {color:#e8340c;border:1px solid #e8340c;}
 
+/* 确认 & 重置按钮 */
+.submitBtn .col-xs-6 {padding:0;}
+.submitBtn input {color:#999;display:block;padding:1rem 0;width:100%;-webkit-border-radius:0px;-moz-border-radius:0px;border-radius:0px;}
+.submitBtn input[type="submit"]{color:#fff;background-color:#f92f34;}
+
+/* 已购 Page */
+.tagBar {padding:.8rem .3rem;}
+.tagBar .tags {padding:.5rem .9rem;font-size:small;background-color:#eaeaea;color:#666;-webkit-border-radius:16px;-moz-border-radius:16px;border-radius:16px;}
+.progressBlock {width:100%;}
+.progressBlock .col-xs-8 {padding:0;}
+.progressBlock .col-xs-4 {text-align:right;white-space: nowrap;padding-bottom:.4rem;}
+.progress {display:block;width:100%;height: 4px;background-color:#dcdcdc;border-radius: 4px;}
+.progress-bar {background-color:#f92f34;display:block;height: 4px;border-radius: 4px;}
+
+.itemType {color:#fff;padding:1px .25rem;margin-left:.5rem;background-color:#ff8c47;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
+
+/* 课程详情 */
+.classDetail {}
+.classDetail h2 {margin:1rem 0;}
+.classDetail p {line-height:1.8;color:#999;}
+.TeacherIntroduction p {color:#cfcfcf;text-indent:2em;}
+
 /*//// for sub pages End ////*/
+
+/*//// for Tabs Swich Star ////*/
+
+.hejun-Tabs {}
+.hejun-Tabs input[type="radio"] {display:none;}
+.hejun-Tabs .flex-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.hejun-Tabs .flex-tabs .tab {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.hejun-Tabs .flex-tabs .panel {
+  padding-top:1rem;
+  background-color: #fff;
+  display: none;
+  width: 100%;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+}
+.hejun-Tabs .tab {
+  display: inline-block;
+  vertical-align: top;
+  text-align:center;
+  color:#cdcdcd;
+  cursor: hand;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #e9e9e9;
+}
+.hejun-Tabs .tab span {padding:.8rem 0;display:inline-block;}
+.hejun-Tabs .tab div.bar {background-color:#fff;height:4px;width:3.5rem;margin:0 auto;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
+
+.hejun-Tabs .tab:hover {color:#222;}
+
+#tab-one:checked ~ .tabs #tab-one-label,
+#tab-two:checked ~ .tabs #tab-two-label,
+#tab-three:checked ~ .tabs #tab-three-label,
+#tab-four:checked ~ .tabs #tab-four-label {cursor: default;color:#555;font-weight: bold;}
+
+#tab-one:checked ~ .tabs #tab-one-label div,
+#tab-two:checked ~ .tabs #tab-two-label div,
+#tab-three:checked ~ .tabs #tab-three-label div,
+#tab-four:checked ~ .tabs #tab-four-label div {background-color:#ff595d;}
+
+#tab-one:checked ~ .tabs #tab-one-panel,
+#tab-two:checked ~ .tabs #tab-two-panel,
+#tab-three:checked ~ .tabs #tab-three-panel,
+#tab-four:checked ~ .tabs #tab-four-panel {display: block;}
+
+/*//// for Tabs Swich End ////*/
 
 /*//// for Mypages Star ////*/
 
@@ -160,6 +256,5 @@ h1,h2,strong,b{font-weight: bold;}
 .myPageItems li:last-child {border:none;}
 .myPageItems li a {color:#555;padding:.8rem 0;}
 .myPageItems li a:hover {color:#222;background-color:#f3f3f3;}
-.myPageItems li a h3 {padding-left:.25rem;}
 
 /*//// for Mypages End ////*/

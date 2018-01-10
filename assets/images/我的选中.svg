@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="38px" viewBox="0 0 22 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>我的</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="首页_效果图" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-301.000000, -1456.000000)">
+        <g id="菜单栏" transform="translate(0.000000, 1449.000000)" fill="#F92F34">
+            <g id="我的" transform="translate(301.000000, 7.000000)">
+                <text font-family="PingFangSC-Regular, PingFang SC" font-size="11" font-weight="normal">
+                    <tspan x="0" y="37">我的</tspan>
+                </text>
+                <path d="M0,18 C0,15.399213 2.75529745,13.3522028 6.63274543,12.4708527 C5.02800842,11.1881397 4,9.21409556 4,7 C4,3.13407889 7.13407889,0 11,0 C14.8659211,0 18,3.13407889 18,7 C18,9.21409556 16.9719916,11.1881397 15.3672546,12.4708527 C19.2447026,13.3522028 22,15.399213 22,18 L22,21.2825 C22,22.1675846 21.6435629,23 20.6105,23 L1.6395,23 C0.777588593,23 0,22.1047962 0,21.2825 L0,18 Z M2,18 L2,21 L20,21 L20,18 C20,15.9793658 16.0414051,14 11,14 C5.95859486,14 2,15.9793658 2,18 Z M11,12 C13.7613516,12 16,9.76135161 16,7 C16,4.23864839 13.7613516,2 11,2 C8.23864839,2 6,4.23864839 6,7 C6,9.76135161 8.23864839,12 11,12 Z" id="Combined-Shape" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>
