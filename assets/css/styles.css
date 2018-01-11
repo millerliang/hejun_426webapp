@@ -138,8 +138,8 @@ h1,h2,strong,b{font-weight: bold;}
 /* 筛选选单 */
 .filterSel {}
 .filterSel label {padding:1rem 0;cursor: pointer;}
-.filterCont {min-height: 0px;overflow:hidden;position:absolute;left:0;width:100%;}
-.contBody {display:none;position:absolute;z-index:1;left:0;padding:1rem;width:100%;background-color:#fff;border-top:1px solid #ddd;}
+.filterCont {min-height: 0px;overflow:hidden;position:absolute;z-index:1;left:0;width:100%;}
+.contBody {display:none;position:absolute;z-index:2;left:0;padding:1rem;width:100%;background-color:#fff;border-top:1px solid #ddd;}
 
 #sel-pop,#sel-1,#sel-2,#sel-3 {display:none;}
 
