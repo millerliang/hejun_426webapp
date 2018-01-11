@@ -91,8 +91,10 @@ h1,h2,strong,b{font-weight: bold;}
 .hotItems a p img {vertical-align: -webkit-baseline-middle;vertical-align: middle;}
 
 /* 换一批 */
-.loadNewItem {position:relative;z-index:-1;display:block;text-align:center;}
-.loadNewItem .fa-spin {color:#999;transform: scale(2,2);transition:all .8s;}
+.loadNewItem {display:block;text-align:center;padding:.25rem 0;font-size:14px;color:#ccc;}
+.loadNewItem img {margin-right:.45rem;vertical-align: middle;}
+.loadNewItem.rotate360 #spinIco {color:#999;transform: scale(2,2);transition:all .8s;transform-origin: center;-webkit-animation: rotate360 1s infinite linear;animation: rotate360 1s infinite linear;}
+@keyframes rotate360 {0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}
 
 /* 在线沙龙 */
 .salonItems {display:table;white-space: nowrap;display: block;width:100%;overflow: hidden;overflow-x: auto;}

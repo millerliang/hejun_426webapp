@@ -120,7 +120,7 @@
 		</ul>
 
 		<div class="h2rem"></div>
-		<a href="#0" class="loadNewItem grey"><!-- <i class="fa fa-refresh"></i> 换一批 --><img src="assets/images/换一批.svg" alt="换一批"></a>
+		<a href="#0" class="loadNewItem grey"><img src="assets/images/reflashIco.svg" alt="reflash Ico"> 换一批</a>
 		<div class="h3rem"></div>
 
 		<article class="subTitle row">
@@ -226,9 +226,9 @@
 
 		// 换一批 BTN Animation
 		$(".loadNewItem").click(function() {
-		  $(this).children("i").addClass("fa-spin");
+		  $(this).children("img").addClass("fa-spin");
 		  setTimeout(function(){
-				$(".loadNewItem").children("i").removeClass("fa-spin");
+				$(".loadNewItem").children("img").removeClass("fa-spin");
 			},3600);
 		});
 	});
