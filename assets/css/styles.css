@@ -7,7 +7,7 @@ body{color:#444;padding: 0;margin: 0;background-color:#efefef;font-family: Noto 
 a,input:focus,button {outline:none;}
 a {color:#444;}
 a:link,a:visited,a:hover,a:active {text-decoration: underline;text-decoration: none;}
-img{vertical-align: middle;}
+img{vertical-align: inherit;}
 h1{font-size:18pt;}
 h2,.f16{font-size:16pt;}
 h3,.f14{font-size:14pt;}
@@ -54,7 +54,7 @@ h1,h2,strong,b{font-weight: bold;}
 .btn-block{display:block;width: 100%;}
 .trs3 {transition:all .3s;-moz-transition:all .3s;-webkit-transition:all .3s;}
 
-.topSearch .ico {position:absolute;color:#dadada;margin:.5rem 0 0 .25rem;}
+.topSearch .ico {position:absolute;color:#dadada;margin:.4rem 0 0 .25rem;}
 .topSearch input {border:none;display:block;width:100%;padding:.25rem 0 .25rem 1.5rem;}
 
 .footerMenu {padding:.3rem 0 0;-moz-box-shadow: 0px -2px 8px rgba(0,0,0,.12);-webkit-box-shadow: 0px -2px 8px rgba(0,0,0,.12);box-shadow: 0px -2px 8px rgba(0,0,0,.12);}
@@ -91,7 +91,7 @@ h1,h2,strong,b{font-weight: bold;}
 .hotItems a p img {vertical-align: -webkit-baseline-middle;vertical-align: middle;}
 
 /* 换一批 */
-.loadNewItem {display:block;text-align:center;}
+.loadNewItem {position:relative;z-index:-1;display:block;text-align:center;}
 .loadNewItem .fa-spin {color:#999;transform: scale(2,2);transition:all .8s;}
 
 /* 在线沙龙 */
@@ -138,16 +138,24 @@ h1,h2,strong,b{font-weight: bold;}
 /* 筛选选单 */
 .filterSel {}
 .filterSel label {padding:1rem 0;cursor: pointer;}
-.filterSel label.active {color:#000;}
-.filterSel label.active i {transform:rotate(-180deg);}
-
-.filterSel ~ input[type="checkbox"] {display:none;}
-.filterSel ~ input[type="checkbox"]:checked + label {min-height:100vh;background-color:rgba(0,0,0,.5);}
-
 .filterCont {min-height: 0px;overflow:hidden;position:absolute;left:0;width:100%;}
 .contBody {display:none;position:absolute;z-index:1;left:0;padding:1rem;width:100%;background-color:#fff;border-top:1px solid #ddd;}
 
-.filterSel ~ input[type="checkbox"]:checked + .filterCont + .contBody {display:block;}
+#sel-pop,#sel-1,#sel-2,#sel-3 {display:none;}
+
+#sel-1:checked ~ .filterSel .sel-1 img,
+#sel-2:checked ~ .filterSel .sel-2 img,
+#sel-3:checked ~ .filterSel .sel-3 img {transform:rotate(-180deg);top: -.25rem;position: relative;}
+
+#sel-pop:checked ~ .popCont, /* for single Menu */
+#sel-1:checked ~ label.fc-1,
+#sel-2:checked ~ label.fc-2,
+#sel-3:checked ~ label.fc-3 {min-height:100vh;background-color:rgba(0,0,0,.5);}
+
+#sel-pop:checked ~ .popBody, /* for single Menu */
+#sel-1:checked ~ .cBody-1,
+#sel-2:checked ~ .cBody-2,
+#sel-3:checked ~ .cBody-3 {display:block;}
 
 /* 经营管理 List */
 .skillList {width:90%;margin:0 auto;}
@@ -187,6 +195,26 @@ h1,h2,strong,b{font-weight: bold;}
 .classDetail h2 {margin:1rem 0;}
 .classDetail p {line-height:1.8;color:#999;}
 .TeacherIntroduction p {color:#cfcfcf;text-indent:2em;}
+
+/* 收藏 */
+.favoriteHeart {border-left:1px solid #ececec;}
+.favoriteHeart.active {color:#f92f34;}
+.favoriteHeart.active svg {animation: fave-heart .7s;}
+.favoriteHeart.active svg g {fill:#f92f34;}
+
+@keyframes fave-heart {
+  0% {
+    transform: scale(1,1);
+	opacity:.1;
+  }
+  50% {
+    transform: scale(1.5,1.5);
+  }
+  100% {
+    transform: scale(1,1)
+	opacity:1;
+  }
+}
 
 /*//// for sub pages End ////*/
 

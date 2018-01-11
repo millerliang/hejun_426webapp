@@ -14,7 +14,7 @@
 	<div class="container-fluid thisStickyTop">
 		<nav class="navbar row middle-xs">
 			<selected class="col-xs-2 col-sm-1 text-center">
-				<a href="index.html"><img src="assets/images/返回.svg" alt="返回"></a>
+				<a class="btn-block" href="#0" onclick="history.back()"><img src="assets/images/返回.svg" alt="返回"></a>
 			</selected>
 			<header class="col-xs-8 text-center">
 				<h2>课程详情</h2>
@@ -44,7 +44,18 @@
 				<p><span class="red f16">￥268</span></p>
 			</selected>
 			<selected class="col-xs-3 text-right">
-				<div class="grey" style="border-left:1px solid #ececec;"><img src="assets/images/收藏.svg" alt="收藏"> 收藏</div>
+				<!-- <div class="grey" style="border-left:1px solid #ececec;"><img src="assets/images/收藏.svg" alt="收藏"> 收藏</div> -->
+				<div class="favoriteHeart grey trs3">
+					<svg width="14px" height="13px" viewBox="0 0 14 13">
+						<g id="Favorite" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-297.000000, -280.000000)">
+							<g id="" transform="translate(-130.000000, 64.000000)" fill="#CCCCCC">
+								<g id="" transform="translate(130.000000, 160.000000)">
+									<path d="M307.15,56 C305.932,56 304.763,56.567 304,57.463 C303.237,56.567 302.068,56 300.85,56 C298.694,56 297,57.694 297,59.85 C297,62.496 299.38,64.652 302.985,67.928 L304,68.845 L305.015,67.921 C308.62,64.652 311,62.496 311,59.85 C311,57.694 309.306,56 307.15,56 L307.15,56 Z M304.07,66.885 L304,66.955 L303.93,66.885 C300.598,63.868 298.4,61.873 298.4,59.85 C298.4,58.45 299.45,57.4 300.85,57.4 C301.928,57.4 302.978,58.093 303.349,59.052 L304.658,59.052 C305.022,58.093 306.072,57.4 307.15,57.4 C308.55,57.4 309.6,58.45 309.6,59.85 C309.6,61.873 307.402,63.868 304.07,66.885 L304.07,66.885 Z" id="Shape"></path>
+								</g>
+							</g>
+						</g>
+					</svg> 收藏
+				</div>
 			</selected>
 		</article>
 		<div class="h3rem"></div>
@@ -100,6 +111,8 @@
 						<li><a href="#0"><img src="https://placem.at/things?txt=imgs&w=480&h=240&random=4"></a><p>item Title</p></li>
 						<li><a href="#0"><img src="https://placem.at/things?txt=imgs&w=480&h=240&random=5"></a><p>item Title</p></li>
 					</ul>
+					<div class="h2rem"></div>
+					<div class="noMore"><small>没有更多了</small></div>
 				</selected>
 				<selected id="tab-two-panel" class="panel">
 					Tab two 目录 content
@@ -110,19 +123,23 @@
 			</article>
 		</div><!-- hejun-Tabs End -->
 
-		<div class="h2rem"></div>
-		<div class="noMore"><small>没有更多了</small></div>
-
 	</main>
 
 	<div class="container-fluid thisStickyBottom">
 		<ul class="row text-center middle-xs submitBtn">
-			<li class="col-xs-6"><button class="btn btn-block f14 red"><img style="margin-right:.8rem;" src="assets/images/播放.svg" alt="播放">试听</button></li>
-			<li class="col-xs-6"><input class="btn f14" type="submit" value="立即购买"></li>
+			<li class="col-xs-6"><button class="btn btn-block f14 red"><img style="width:1.6rem;margin-right:.6rem;vertical-align: text-bottom;" src="assets/images/播放red.svg" alt="播放 icon">试听</button></li>
+			<li class="col-xs-6" onclick="javascript:location.href='buyclass.html'"><input class="btn f14" type="submit" value="立即购买"></li>
 		</ul>
 	</div>
 
 	<!-- JavaScript ================================================== -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+		$(document).ready(function(){
+			$(".favoriteHeart").click(function() {
+				$(this).toggleClass("active");
+			});
+		});
+	</script>
 </body>
 </html>

@@ -14,7 +14,7 @@
 	<div class="container-fluid">
 		<nav class="navbar row middle-xs">
 			<selected class="col-xs-2 col-sm-1 text-center">
-				<a href="index.html"><img src="assets/images/返回.svg" alt="返回"></a>
+				<a class="btn-block" href="#0" onclick="history.back()"><img src="assets/images/返回.svg" alt="返回"></a>
 			</selected>
 			<header class="col-xs-10 col-sm-11 topSearch">
 				<img class="ico" src="assets/images/搜索.svg" alt="搜索"><input placeholder="搜索" type="text">
@@ -23,14 +23,21 @@
 	</div>
 
 	<div class="container thisStickyTop" style="background-color:rgba(255,255,255,.92);z-index:1;">
-		<article class="filterSel row middle-xs text-center">
-			<label class="col-xs-4 trs3" for="sel-1">经营管理 <i class="fa fa-angle-down trs3 grey"></i></label>
-			<label class="col-xs-4 trs3" for="sel-2">排序 <i class="fa fa-angle-down trs3 grey"></i></label>
-			<label class="col-xs-4 trs3" for="sel-3">筛选 <i class="fa fa-angle-down trs3 grey"></i></label>
-		</article>
 		<input id="sel-1" type="checkbox">
-		<label for="sel-1" class="filterCont trs3"></label>
-		<selected class="contBody">
+		<input id="sel-2" type="checkbox">
+		<input id="sel-3" type="checkbox">
+
+		<article class="filterSel row middle-xs text-center">
+			<label class="col-xs-4 sel-1" for="sel-1">经营管理 <img class="trs3" src="assets/images/筛选.svg" alt="筛选箭头"></label>
+			<label class="col-xs-4 sel-2" for="sel-2">排序 <img class="trs3" src="assets/images/筛选.svg" alt="筛选箭头"></label>
+			<label class="col-xs-4 sel-3" for="sel-3">筛选 <img class="trs3" src="assets/images/筛选.svg" alt="筛选箭头"></label>
+			<!-- <label class="col-xs-4 sel-1 trs3" for="sel-1">经营管理 <i class="fa fa-angle-down trs3 grey"></i></label>
+			<label class="col-xs-4 sel-2 trs3" for="sel-2">排序 <i class="fa fa-angle-down trs3 grey"></i></label>
+			<label class="col-xs-4 sel-3 trs3" for="sel-3">筛选 <i class="fa fa-angle-down trs3 grey"></i></label> -->
+		</article>
+
+		<label for="sel-1" class="fc-1 filterCont trs3"></label>
+		<selected class="contBody cBody-1">
 			<ul class="skillList">
 				<li><input id="all" type="radio" name="rcc" checked><label for="all">全部课程 <i class="fa fa-check"></i></label></li>
 				<li><input id="a" type="radio" name="rcc"><label for="a">职业技能 <i class="fa fa-check"></i></label></li>
@@ -38,13 +45,15 @@
 				<li><input id="c" type="radio" name="rcc"><label for="c">经营管理 <i class="fa fa-check"></i></label></li>
 				<li><input id="d" type="radio" name="rcc"><label for="d">职业技能 <i class="fa fa-check"></i></label></li>
 			</ul>
-		</selected>
-		<input id="sel-2" type="checkbox">
-		<label for="sel-2" class="filterCont trs3"></label>
-		<selected class="contBody">排序</selected>
-		<input id="sel-3" type="checkbox">
-		<label for="sel-3" class="filterCont trs3"></label>
-		<selected class="contBody">
+		</selected><!-- // 经营管理 -->
+
+		<label for="sel-2" class="fc-2 filterCont trs3"></label>
+		<selected class="contBody cBody-2">
+			Use 排序 Content
+		</selected><!-- // 排序 -->
+
+		<label for="sel-3" class="fc-3 filterCont trs3"></label>
+		<selected class="contBody cBody-3">
 			<h3 class="grey">课程类型</h3>
 			<div class="h1rem"></div>
 			<ul class="coursePrice row center-xs">
@@ -70,7 +79,7 @@
 				<li class="col-xs"><button class="btn btn-block grey">最高价</button></li>
 			</ul>
 			<div class="h1rem"></div>
-		</selected>
+		</selected><!-- // 筛选 -->
 	</div>
 
 	<main class="container mainHeight">
@@ -78,7 +87,7 @@
 		<div class="h1rem"></div>
 		<ul class="eBuy">
 			<li>
-				<a href="#0" class="row">
+				<a href="content.html" class="row">
 					<selected class="col-xs-3 col-sm-2">
 						<img class="img-responsive" src="https://placem.at/things?txt=eGo&w=180&amp;h=180&amp;random=1">
 					</selected>
@@ -99,7 +108,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="#0" class="row">
+				<a href="content.html" class="row">
 					<selected class="col-xs-3 col-sm-2">
 						<img class="img-responsive" src="https://placem.at/things?txt=eGo&w=180&amp;h=180&amp;random=2">
 					</selected>
@@ -122,7 +131,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="#0" class="row">
+				<a href="content.html" class="row">
 					<selected class="col-xs-3 col-sm-2">
 						<img class="img-responsive" src="https://placem.at/things?txt=eGo&w=180&amp;h=180&amp;random=3">
 					</selected>
@@ -143,7 +152,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="#0" class="row">
+				<a href="content.html" class="row">
 					<selected class="col-xs-3 col-sm-2">
 						<img class="img-responsive" src="https://placem.at/things?txt=eGo&w=180&amp;h=180&amp;random=4">
 					</selected>
@@ -164,7 +173,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="#0" class="row">
+				<a href="content.html" class="row">
 					<selected class="col-xs-3 col-sm-2">
 						<img class="img-responsive" src="https://placem.at/things?txt=eGo&w=180&amp;h=180&amp;random=5">
 					</selected>
