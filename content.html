@@ -8,12 +8,21 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/flexboxgrid.min.css"/>
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css"/>
+	<style>
+		.popBody {animation: popContAnima .3s 1 linear;transform: translate(2%,50%);position: fixed;bottom: 50%;width: 96%;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;}
+		.coursePrice {padding:1rem 0;}
+		.coursePrice li {padding:0;}
+		.coursePrice li img {cursor: pointer;}
+		.coursePrice li small {color:#999;display:block;line-height: 2;}
+		.coursePrice li:hover small {color:#222;}
+		.coursePrice li .img-line{max-width:2em;}
+	</style>
 </head>
 
 <body>
 	<div class="container-fluid thisStickyTop">
 		<nav class="navbar row middle-xs">
-			<selected class="col-xs-2 col-sm-1 text-center">
+			<selected class="col-xs-2 text-center">
 				<a class="btn-block" href="#0" onclick="history.back()"><img src="assets/images/返回.svg" alt="返回"></a>
 			</selected>
 			<header class="col-xs-8 text-center">
@@ -24,6 +33,29 @@
 			</selected>
 		</nav>
 	</div>
+	<input id="sel-pop" type="checkbox">
+	<label for="sel-pop" class="filterCont popCont trs3"></label>
+	<article class="contBody popBody trs3">
+		<ul class="coursePrice row text-center middle-xs">
+			<li class="col-xs-4"><i class="fa fa-2x fa-wechat"></i><small>Wechat</small></li>
+			<li class="col-xs-4"><i class="fa fa-2x fa-weibo"></i><small>Weibo</small></li>
+			<li class="col-xs-4"><i class="fa fa-2x fa-qq"></i><small>QQ</small></li>
+			<li class="col-xs-12 h2rem"></li>
+			<li class="col-xs-4"><i class="fa fa-2x fa-facebook-official"></i><small>Facebook</small></li>
+			<li class="col-xs-4"><i class="fa fa-2x fa-twitch"></i><small>Twitch</small></li>
+			<li class="col-xs-4"><i class="fa fa-2x fa-youtube-play"></i><small>Youtube</small></li>
+			<li class="col-xs-12 h2rem"></li>
+			<li class="col-xs-4"><i class="fa fa-2x fa-whatsapp"></i><small>Whatsapp</small></li>
+			<li class="col-xs-4"><i class="fa fa-2x fa-tumblr"></i><small>Tumblr</small></li>
+			<li class="col-xs-4"><i class="fa fa-2x fa-tencent-weibo"></i><small>Tencent Weibo</small></li>
+			<li class="col-xs-12 h2rem"></li>
+			<li class="col-xs-4"><i class="fa fa-2x fa-google-plus"></i><small>Google plus</small></li>
+			<li class="col-xs-4"><i class="fa fa-2x fa-vimeo-square"></i><small>Vimeo</small></li>
+			<li class="col-xs-4"><img class="img-line" src="https://cdn.worldvectorlogo.com/logos/line-messenger.svg" alt="Line icon"><small>Line</small></li>
+			<li class="col-xs-12 h2rem"></li>
+			<li class="col-xs-4"><i class="fa fa-2x fa-instagram"></i><small>Instagram</small></li>
+		</ul>
+	</article>
 	<div class="container-fluid">
 		<img class="img-responsive" src="https://placem.at/things?txt=Class-Image&w=1080&h=450&random=12">
 	</div>
